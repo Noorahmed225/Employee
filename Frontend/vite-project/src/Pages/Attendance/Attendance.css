@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.attendance_container {
+    background-color: antiquewhite;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.attendance_container h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.att_Input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.att_Input p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.att_Input input {
+    width: 100%;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.att-btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    
+}
+.attt-btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(203, 203, 245);
+}
+
+
+
