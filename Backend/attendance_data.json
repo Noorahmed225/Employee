@@ -14,5 +14,13 @@
     "date": "2026-01-19",
     "attendance": "Present",
     "created_at": "2026-01-19T01:34:35.301350"
+  },
+  {
+    "id": 3,
+    "name": "Mark",
+    "employee_id": "2266559988",
+    "date": "2026-01-19",
+    "attendance": "present",
+    "created_at": "2026-01-19T14:06:17.474833"
   }
 ]

@@ -1,20 +1,135 @@
 .veiw-container{
-    width:400px;
-    height:400px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    margin:auto;
-    margin-top:50px;
+    width: 90%;
+    max-width: 900px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.back-btn{
-    width:100px;
-    height:30px;
-    margin-top:270px;
-    border-radius: 10px;
-    border:none;
-    background-color: rgb(203, 203, 245);
-    margin-left:150px;
+.profile-image {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile-details {
+    margin-bottom: 25px;
+}
+
+.veiw-container h1 {
+    text-align: center;
+    padding: 10px 0;
+    color: #2c3e50;
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+.detail-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.detail-section h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-section p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.detail-section strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.status-active {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.no-data-message {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+    padding: 40px;
+}
+
+.back-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: block;
+    margin: 30px auto 0;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .veiw-container {
+        padding: 20px;
+        width: 95%;
+    }
+    
+    .veiw-container h1 {
+        font-size: 24px;
+    }
+    
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .detail-section {
+        padding: 12px;
+    }
+    
+    .back-btn {
+        width: 100%;
+    }
 }

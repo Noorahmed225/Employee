@@ -1,81 +1,167 @@
-.Signup_container h1{
+.signup-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.Signup_container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.signup-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
     text-align: center;
-    color:white;
-    padding:20px;
+    color: white;
 }
 
-.Signup_container{
-    background-color:#121212;
-    width:400px;
-    height:700px;
-    border-radius: 20px;
-    margin:0 auto;
+.signup-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.Signup_input{
+.signup-header p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.Signup_input {
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
-.Signup_input p{
-    color:white;
-    width:300px;
-    margin-bottom:5px;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.Signup_input input{
-   width:300px;
-   padding:10px;
+.form-group label {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 14px;
 }
 
-.Login-now{
-    color:white;
+.Signup_input input {
+    padding: 12px 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-family: inherit;
 }
 
-.Signup{
-    width:320px;
-    padding:10px;
-    margin-top:30px;
-    border:none;
-    border-radius:5px;
-    background-color: blue;
+.Signup_input input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.Signup_input input.input-error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Signup {
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    border: none;
+    border-radius: 8px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
-.Signup:hover{
-    background-color: #0056b3;
+.Signup:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
 }
 
-.Signup:active{
+.Signup:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+.divider {
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .Google {
-    width:320px;
-    padding:10px;
-    border-radius:5px;
-    border:none;
-    margin-top:5px;
-    background-color: #ffffff;
-    color: #333;
-    font-size: 16px;
+    padding: 12px;
+    background-color: white;
+    border: 2px solid #ecf0f1;
+    color: #2c3e50;
+    border-radius: 8px;
+    font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
-.Google:hover{
-    background-color: #f0f0f0;
+.Google:hover {
+    background-color: #f8f9fa;
+    border-color: #667eea;
+    color: #667eea;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.2);
+}
+
+.Login-now {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.Login-now a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.Login-now a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .signup-wrapper {
+        padding: 10px;
+    }
+
+    .Signup_container {
+        max-width: 100%;
+    }
+
+    .Signup_input {
+        padding: 30px 20px;
+    }
 }
 
 .Google:active{
