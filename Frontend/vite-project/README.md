@@ -14,3 +14,26 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+2. **Install required packages**
+      open new terminal 
+      cd Backend
+   1. Create virtual environment
+       python -m venv venv
+   2. Activate virtual environment
+       venv\Scripts\activate  
+   3. Upgrade pip (optional but recommended)
+       python -m pip install --upgrade pip    
+   4. Install requirements
+       pip install -r requirements.txt
+   5. If you get the pkgutil error, upgrade Flask
+       pip install --upgrade Flask==3.0.0
+   6. Run the app
+       python app.py
+
+Frontend Run commands
+1.select new terminal
+2.cd Frontend
+3.cd Vite-project
+4.npm install
+5.npm run dev

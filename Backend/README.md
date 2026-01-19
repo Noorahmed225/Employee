@@ -7,20 +7,28 @@
 
 ### Installation Steps
 
-1. **Navigate to Backend folder**
-   ```
-   cd Backend
-   ```
-
 2. **Install required packages**
-   ```
-   pip install -r requirements.txt
-   ```
+      open new terminal 
+      cd Backend
+   1. Create virtual environment
+       python -m venv venv
+   2. Activate virtual environment
+       venv\Scripts\activate  
+   3. Upgrade pip (optional but recommended)
+       python -m pip install --upgrade pip    
+   4. Install requirements
+       pip install -r requirements.txt
+   5. If you get the pkgutil error, upgrade Flask
+       pip install --upgrade Flask==3.0.0
+   6. Run the app
+       python app.py
 
-3. **Run the Flask server**
-   ```
-   python app.py
-   ```
+Frontend Run commands
+1.select new terminal
+2.cd Frontend
+3.cd Vite-project
+4.npm install
+5.npm run dev
 
 The server will start on `http://localhost:5000`
 
