@@ -17,13 +17,13 @@ const Employees = ({img,title,description}) => {
     return (
         <>
             <Header/>
-            <Card img={sundar} title="Sundar" description="Frontend Developer" />
-            <Card img={amazon} title="amazon" description="Frontend Developer"/>
-            <Card img={anand} title="anand" description="Frontend Developer"/>
-            <Card img={mark} title="mark" description="Frontend Developer"/>          
-            <Card img={steve} title="steve" description="Frontend Developer"/>
-            <Card img={tata} title="tata" description="Frontend Developer"/>
-            <Card img={tesla} title="tesla" description="Frontend Developer"/>
+            <Card img={sundar} title="Google" description="Frontend Developer" />
+            <Card img={amazon} title="Amazon" description="Frontend Developer"/>
+            <Card img={anand} title="Tech" description="Frontend Developer"/>
+            <Card img={mark} title="Meta" description="Frontend Developer"/>          
+            <Card img={steve} title="Apple" description="Frontend Developer"/>
+            <Card img={tata} title="Tata" description="Frontend Developer"/>
+            <Card img={tesla} title="Tesla" description="Frontend Developer"/>
             <Card img={Microsoft} title="Microsoft" description="Frontend Developer"/>
            
         </>
