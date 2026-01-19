@@ -23,7 +23,12 @@ const Dashboards = () => {
     const fetchDashboardData = async () => {
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:5000/api/dashboard/${employeeId}`);
+            const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/dashboard/${employeeId}`;
+            const response = await fetch(apiUrl, {
+                headers: {
+                    'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`
+                }
+            });
             if (!response.ok) {
                 throw new Error('Failed to fetch dashboard data');
             }

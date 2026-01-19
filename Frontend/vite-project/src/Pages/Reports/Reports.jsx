@@ -16,12 +16,16 @@ const Reports = () => {
     const fetchReports = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:5000/api/attendance');
+            const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/attendance`;
+            const response = await fetch(apiUrl, {
+                headers: {
+                    'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`
+                }
+            });
             if (!response.ok) {
                 throw new Error('Failed to fetch reports');
             }
             const data = await response.json();
-            // Sort by date (latest first)
             const sortedData = data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
             setReports(sortedData);
             setError(null);

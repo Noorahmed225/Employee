@@ -22,14 +22,16 @@ const Attendance = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://127.0.0.1:5000/api/attendance', {
+            const apiUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/attendance`;
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`
                 },
                 body: JSON.stringify(formData)
             });
-            
+
             if (response.ok) {
                 alert('Attendance recorded successfully!');
                 setFormData({ name: '', id: '', date: '', attendance: '' });
