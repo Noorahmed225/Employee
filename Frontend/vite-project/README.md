@@ -15,10 +15,10 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-2. **Install required packages**
-      open new terminal 
-      cd Backend
+"open new terminal Navigate the folder follow given below cmd"
    1. Create virtual environment
+       cd Employee
+       cd Backend
        python -m venv venv
    2. Activate virtual environment
        venv\Scripts\activate  
@@ -31,9 +31,11 @@ If you are developing a production application, we recommend using TypeScript wi
    6. Run the app
        python app.py
 
-Frontend Run commands
+Frontend Run commands open new terminal Navigate the folder follow given below cmd
+
 1.select new terminal
-2.cd Frontend
-3.cd Vite-project
-4.npm install
-5.npm run dev
+2.cd Employee
+3.cd Frontend
+4.cd Vite-project
+5.npm install
+6.npm run dev
